@@ -1,12 +1,18 @@
 type ButtonProps = {
-  id: string;
+  id?: string;
   title: string;
   leftIcon?: React.ReactNode;
   rightIcon?: React.ReactNode;
   containerClass?: string;
 };
 
-const Button = ({ id, title, leftIcon, containerClass }: ButtonProps) => {
+const Button = ({
+  id,
+  title,
+  leftIcon,
+  rightIcon,
+  containerClass,
+}: ButtonProps) => {
   return (
     <button
       id={id}
@@ -16,6 +22,7 @@ const Button = ({ id, title, leftIcon, containerClass }: ButtonProps) => {
       <span className="relative inline-flex overflow-hidden font-general text-xs uppercase">
         <div>{title}</div>
       </span>
+      {rightIcon}
     </button>
   );
 };
