@@ -1,54 +1,42 @@
-# React + TypeScript + Vite
+Zentry Clone
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a clone of the Zentry application, created following a tutorial by JavaScript Mastery. The original tutorial used JavaScript, but I implemented the project using TypeScript for better type safety and maintainability. The goal was to learn modern web application development and work with key technologies.
 
-Currently, two official plugins are available:
+🛠 Technologies Used
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Vite – Fast development environment
 
-## Expanding the ESLint configuration
+React.js – Component-based UI approach
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+TypeScript – Strongly typed JavaScript
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+GSAP – Animation library for smooth UI interactions
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+React Icons – Icon library for UI elements
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+Tailwind CSS – Utility-first styling framework
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+🚀 Running the Project
+
+Clone the repository:
+
+git clone https://github.com/florixak/zentry-clone.git
+cd zentry-clone
+
+Install dependencies:
+
+npm install
+
+Start the development server:
+
+npm run dev
+
+✨ What I Learned
+
+The biggest problem for me was GSAP, I have never worked with that to now. I have to say it is a really powerful tool for animations and I will 100% use it in the future.
+
+📌 Note
+
+This project is based on a tutorial and is not intended for production use. If I decide to continue working on it, I would consider implementing custom modifications and improvements.
+
+🔗 If you'd like to try the project, here is the demo link: [Demo](https://clone-of-zentry.netlify.app/)
