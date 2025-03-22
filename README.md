@@ -1,6 +1,6 @@
 # Zentry Clone
 
-This project is a clone of the Zentry application, created following a tutorial by JavaScript Mastery. The original tutorial used JavaScript, but I implemented the project using TypeScript for better type safety and maintainability. The goal was to learn modern web application development and work with key technologies.
+This project is a clone of the Zentry application, created following a [tutorial](https://www.youtube.com/watch?v=zA9r5zTllx4&ab_channel=JavaScriptMastery) by JavaScript Mastery. The original tutorial used JavaScript, but I implemented the project using TypeScript for better type safety and maintainability. The goal was to learn modern web application development and work with key technologies.
 
 ### 🛠 Technologies Used
 
